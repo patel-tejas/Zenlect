@@ -42,7 +42,7 @@ export function HeroSection() {
                         duration: 0.5,
                         ease: [0.4, 0.0, 0.2, 1],
                     }}
-                    className="text-center px-4 text-lg"
+                    className="text-center px-4 text-xl"
                 >
                     Empowering industries with advanced AI for {" "}
                     <Highlight className="text-white">
