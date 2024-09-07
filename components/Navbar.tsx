@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between py-3 px-3 font-poppins items-center'>
+    <div className='flex justify-between py-3 px-3 font-poppins items-center max-w-[1440px] mx-auto'>
       <Link href={"/"} className='font-bold text-xl '>Zenlect</Link>
       <div className=' gap-3 hidden lg:flex'>
         <Button variant="ghost" className='text-white hover:bg-white/10 hover:text-white no-underline'>Home</Button>

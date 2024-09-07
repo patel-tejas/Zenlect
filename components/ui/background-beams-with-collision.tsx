@@ -64,13 +64,15 @@ export const BackgroundBeamsWithCollision = ({
             delay: 2,
             className: "h-6",
         },
+        
+        
     ];
 
     return (
         <div
             ref={parentRef}
             className={cn(
-                "h-full from-neutral-950 to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
+                "h-full from-neutral-950 to-neutral-800 relative flex items-center w-full justify-center overflow-hidden mx-auto",
                 // h-screen if you want bigger
                 className
             )}
