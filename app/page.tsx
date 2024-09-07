@@ -4,7 +4,9 @@ import React from 'react'
 const page = () => {
   return (
     <div className='font-sans'>
-      <HeroSection />
+      <div className='h-[92vh]'>
+        <HeroSection />
+      </div>
     </div>
   )
 }

@@ -9,7 +9,7 @@ import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collisi
 export function HeroSection() {
     return (
         <BackgroundBeamsWithCollision className="h-full w-full">
-            <HeroHighlight className="font-poppins h-full flex items-center flex-col justify-center">
+            <HeroHighlight className="font-poppins h-full flex items-center flex-col">
                 <motion.h1
                     initial={{
                         opacity: 0,
