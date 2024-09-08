@@ -4,9 +4,7 @@ import React from 'react'
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 
@@ -17,7 +15,7 @@ const Navbar = () => {
       <div className=' gap-3 hidden lg:flex'>
         <Button variant="ghost" className='text-white hover:bg-white/10 hover:text-white no-underline'>Home</Button>
         <Button variant='ghost' className='text-white hover:bg-white/10 hover:text-white no-underline'>About</Button>
-        <Button variant='ghost' className='text-white hover:bg-white/10 hover:text-white no-underline'>Contact</Button>
+        <Button variant='ghost' className='text-w1e h rounded-fullover:bg-white/10 ho4er:text-white no-underline'>Contact</Button>
       </div>
       <div className='hidden lg:flex gap-3'>
         <button className="relative">
@@ -32,9 +30,9 @@ const Navbar = () => {
       <div className='lg:hidden'>
         <Sheet>
           <SheetTrigger className='flex flex-col gap-[7px]'>
-            <div className='h-[0.6px] w-6 bg-slate-500'></div>
-            <div className='h-[0.6px] w-6 bg-slate-500'></div>
-            <div className='h-[0.6px] w-6 bg-slate-500'></div>
+            <div className='h-[1px] rounded-full w-6 bg-slate-400'></div>
+            <div className='h-[1px] rounded-full w-6 bg-slate-400'></div>
+            <div className='h-[1px] rounded-full w-6 bg-slate-400'></div>
           </SheetTrigger>
           <SheetContent className='bg-black  border-l-[0.5px] border-slate-700 shadow-2xl px-10'>
             <SheetHeader className='my-10 w-full font-poppins h-full'>
