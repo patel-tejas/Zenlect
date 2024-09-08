@@ -141,7 +141,7 @@ export function StepsTimeline() {
     },
   ];
   return (
-    <div className="w-full bg-gradient-to-b from-slate-950 to-black shadow-2xl shadow-zinc-600 border-t ">
+    <div className="w-full bg-gradient-to-b from-slate-950 to-black shadow-2xl shadow-zinc-700 border-t-[1px] border-zinc-600 ">
       <Timeline data={data} />
     </div>
   );

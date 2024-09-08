@@ -41,7 +41,7 @@ export function FeaturesSectionMain() {
             description:
                 "Our model can predict any image's location accurately no matter where it has been captured.",
             skeleton: <SkeletonFour />,
-            className: "col-span-1 lg:col-span-3 border-b lg:border-none",
+            className: "col-span-1 lg:col-span-3 border-b border-neutral-800 lg:border-none",
         },
     ];
     return (
@@ -165,7 +165,7 @@ export const SkeletonTwo = () => {
                         }}
                         whileHover="whileHover"
                         whileTap="whileTap"
-                        className="rounded-xl -mr-4 mt-4 p-1  bg-neutral-800 border-neutral-700 border  flex-shrink-0 overflow-hidden"
+                        className="rounded-xl -mr-4 mt-4 p-1  bg-neutral-800 border-neutral-800 border  flex-shrink-0 overflow-hidden"
                     >
                         <Image
                             src={image}
@@ -187,7 +187,7 @@ export const SkeletonTwo = () => {
                         variants={imageVariants}
                         whileHover="whileHover"
                         whileTap="whileTap"
-                        className="rounded-xl -mr-4 mt-4 p-1 bg-neutral-800 border-neutral-700 border flex-shrink-0 overflow-hidden"
+                        className="rounded-xl -mr-4 mt-4 p-1 bg-neutral-800 border-neutral-800 border flex-shrink-0 overflow-hidden"
                     >
                         <Image
                             src={image}

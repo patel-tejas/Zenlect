@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className='h-[1px] rounded-full w-6 bg-slate-400'></div>
             <div className='h-[1px] rounded-full w-6 bg-slate-400'></div>
           </SheetTrigger>
-          <SheetContent className='bg-black  border-l-[0.5px] border-slate-700 shadow-2xl px-10'>
+          <SheetContent className='bg-black  border-l-[0.5px] border-slate-800 shadow-2xl px-10'>
             <SheetHeader className='my-10 w-full font-poppins h-full'>
               <div className='flex flex-col justify-between h-[80vh]'>
                 <div className='flex flex-col'>
