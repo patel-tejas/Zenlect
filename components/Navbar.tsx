@@ -1,6 +1,14 @@
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import React from 'react'
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 const Navbar = () => {
   return (
@@ -21,6 +29,41 @@ const Navbar = () => {
         <button className="inline-flex animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"> Sign Up </button>
       </div>
 
+      <div className='lg:hidden'>
+        <Sheet>
+          <SheetTrigger className='flex flex-col gap-[7px]'>
+            <div className='h-[0.6px] w-6 bg-slate-500'></div>
+            <div className='h-[0.6px] w-6 bg-slate-500'></div>
+            <div className='h-[0.6px] w-6 bg-slate-500'></div>
+          </SheetTrigger>
+          <SheetContent className='bg-black  border-l-[0.5px] border-slate-700 shadow-2xl px-10'>
+            <SheetHeader className='my-10 w-full font-poppins h-full'>
+              <div className='flex flex-col justify-between h-[80vh]'>
+                <div className='flex flex-col'>
+
+                  <div className='flex flex-col gap-1 items-start mb-5'>
+                    <Link className='text-lg' href="/about"> About Us</Link>
+                    <Link className='text-lg' href="/contact"> Contact</Link>
+                  </div>
+                  <div className='flex flex-col gap-3'>
+                    <button className="relative w-[6rem] px-3 py-2">
+                      <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                      <div className="rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent text-lg font-medium">
+                        Login
+                      </div>
+                    </button>
+                    <button className="relative w-[6rem] px-3 py-2 inline-flex animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-lg font-medium"> Sign Up </button>
+                  </div>
+                </div>
+                <div className='flex items-start'>
+                  <Link href="/" className='text-3xl font-bold'>Zenlect<span className='tracking-normal text-purple-500'>{""}.</span></Link>
+                </div>
+              </div>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+
+      </div>
     </div>
   )
 }

@@ -37,10 +37,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             ref={containerRef}
         >
             <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-                <h2 className="text-lg md:text-4xl mb-4 text-white max-w-4xl">
+                <h2 className="text-lg md:text-6xl font-semibold mb-4 text-white max-w-4xl">
                     How our Geolocator Model Works
                 </h2>
-                <p className="text-neutral-300 text-sm md:text-base max-w-sm">
+                <p className="text-neutral-300 text-sm max-w-sm md:max-w-md md:text-xl">
                     So basically we take the image given by the user and predict the location of image 
                 </p>
             </div>

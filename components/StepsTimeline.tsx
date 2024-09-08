@@ -5,7 +5,7 @@ import { Timeline } from "./ui/timeline";
 export function StepsTimeline() {
   const data = [
     {
-      title: "Upload Image",
+      title: "Upload an Image",
       content: (
         <div>
           <p className="text-neutral-200 text-xs md:text-sm font-normal mb-8">
