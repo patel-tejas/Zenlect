@@ -33,7 +33,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${notoSans.variable} antialiased`}
       >
+        <nav className="sticky top-0 z-50 backdrop-blur-lg bg-black/80 border-b border-white/20">
         <Navbar />
+        </nav>
         {children}
         <Footer/>
       </body>

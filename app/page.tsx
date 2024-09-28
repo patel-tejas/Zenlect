@@ -1,6 +1,5 @@
 import {  FeaturesSectionMain } from '@/components/FeatureSectionMain'
 import { HeroSection } from '@/components/HeroSection'
-import { StepsTimeline } from '@/components/StepsTimeline'
 import React from 'react'
 
 const page = () => {
@@ -9,7 +8,8 @@ const page = () => {
       <div className=''>
         <HeroSection />
         <FeaturesSectionMain />
-        <StepsTimeline />
+        {/* <StepsTimeline /> */}
+        {/* <Vision /> */}
       </div>
     </div>
   )

@@ -1,19 +1,49 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import logo from "@/public/zenlectnobg1.png"
+import Image from 'next/image';
+
 const Footer = () => {
     return (
-        <div className=' py-4 lg:py-5 w-full bg-black border-t-2 px-4 border-slate-800 flex flex-col lg:flex-row items-center justify-between gap-2'>
-            <div className='font-poppins font-bold '>
-                <Link href={"/"} className='font-bold text-lg lg:text-2xl'>Zenlect<span className='tracking-normal text-purple-500'>.</span></Link>
+        <div className='px-4 md:px-8 pt-20 pb-5 lg:py-5 h-full w-full bg-zinc-900 border-t-2 border-zinc-800 flex flex-col gap-20 lg:gap-5 font-poppins'>
+            <div className='flex items-center justify-center'>
+                <div className='grid grid-cols-2 text-left md:grid-cols-3 gap-5 md:px-20 md:py-20 w-full'>
+                    <div className='flex flex-col gap-3'>
+                        <h2 className='text-xl font-bold py-2'>Products</h2>
+                        <Link href={"/geolocator-ai"} className='text-sm hover:text-blue-500 lg:text-[15px] text-gray-300'>Geolocator AI</Link>
+                        <Link href={"/"} className='text-sm hover:text-blue-500 lg:text-[15px] text-gray-300'>Legal Advisor</Link>
+                    </div>
+                    <div className='flex flex-col gap-3'>
+                        <h2 className='text-xl font-bold py-2'>Company</h2>
+                        <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/privacy-policy"}>Privacy Policy</Link>
+                        <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/usage-policy"}>Terms of Use</Link>
+                        <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/ethics"}>Ethics & Compliance
+                        </Link>
+                    </div>
+                    <div className='flex flex-col gap-3'>
+                        <h2 className='text-xl font-bold py-2'>Contact</h2>
+                        <Link href={"/mailto:support@zenlect.com"} className='text-sm lg:text-[15px] hover:text-blue-500 text-gray-300'>support@zenlect.com</Link>
+                       
+                    </div>
+
+                </div>
             </div>
-            <h3 className='font-poppins text-sm lg:text-lg text-center'>© {new Date().getFullYear()} Zenlect Pvt Ltd. All rights reserved.</h3>
-            <div className='flex gap-3'>
-                <FaInstagram className='lg:w-6 lg:h-6'/>
-                <FaXTwitter className='lg:w-6 lg:h-6'/>
+            <div className=' flex flex-col lg:flex-row justify-between gap-2 font-poppins items-center'>
+
+                <div className='font-poppins font-bold flex items-center justify-center gap-2'>
+                <Image src={logo} alt="logo" width={50} height={50} />
+
+                    <Link href={"/"} className='font-bold text-lg lg:text-2xl mt-1'>Zenlect<span className='tracking-normal text-purple-500'>.</span></Link>
+                </div>
+                <div className='align-right flex gap-5 items-center flex-col md:flex-row text-center'>
+                    <h3 className='text-sm lg:text-lg text-center'>© {new Date().getFullYear()} Zenlect Pvt Ltd. All rights reserved.</h3>
+                    
+                </div>
+
             </div>
+
         </div>
+
     )
 }
 
