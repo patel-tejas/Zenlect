@@ -22,7 +22,7 @@ const Navbar = () => {
             Home
           </Button>
         </Link>
-        <Link href="/about">
+        <Link href="/">
           <Button variant='ghost' className='text-white text-[15px] hover:bg-white/5 hover:text-white no-underline'>About</Button>
         </Link>
         {/* <MenuItem setActive={setActive} active={active} item="Products">
@@ -33,7 +33,7 @@ const Navbar = () => {
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
         </MenuItem> */}
-        <Link href="/contact">
+        <Link href="/">
           <Button variant='ghost' className='text-white text-[15px] hover:bg-white/5 hover:text-white no-underline'>Contact</Button>
         </Link>
         <Link href="/geolocator-ai">
@@ -72,8 +72,8 @@ const Navbar = () => {
 
                   <div className='flex flex-col gap-2 items-start mb-5'>
                     <Link className='text-lg' href="/">Home</Link>
-                    <Link className='text-lg' href="/about"> About Us</Link>
-                    <Link className='text-lg' href="/contact"> Contact</Link>
+                    <Link className='text-lg' href="/"> About Us</Link>
+                    <Link className='text-lg' href="/"> Contact</Link>
                     <Link className='text-lg' href="/geolocator-ai"> Geolocator AI</Link>
                     <Link href="http://app.zenlect.com" target='_blank' className="relative mt-5">
                       <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
