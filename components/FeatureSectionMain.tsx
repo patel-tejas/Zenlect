@@ -113,7 +113,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 export const SkeletonOne = () => {
     return (
         <div className="relative flex py-8 px-2 gap-10 h-full">
-            <div className="w-full p-5 mx-auto bg-transparent shadow-2xl group h-[60vh]">
+            <div className="w-full p-2 md:p-5 mx-auto bg-transparent shadow-2xl group h-[30vh] md:h-[60vh]">
                 <div className="flex flex-1 w-full h-full flex-col space-y-2">
                     <Image
                         src={zenlectimg}
@@ -210,7 +210,7 @@ export const SkeletonThree = () => {
     return (
         <div
             
-            className="relative flex gap-10 h-[40vh] group/image"
+            className="relative flex gap-10 h-[30vh] md:h-[40vh] group/image"
         >
             <div className="w-full mx-auto bg-transparent h-full">
                 <div className="flex flex-1 w-full h-full flex-col space-y-2 relative">
