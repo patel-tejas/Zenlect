@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className='gap-3 hidden lg:flex items-center'>
         <Link href="/" >
           <Button variant="ghost" className='text-white text-[15px] hover:bg-white/5 hover:text-white no-underline'>
-          Home
+            Home
           </Button>
         </Link>
         <Link href="/about">
@@ -34,10 +34,10 @@ const Navbar = () => {
           </div>
         </MenuItem> */}
         <Link href="/contact">
-        <Button variant='ghost' className='text-white text-[15px] hover:bg-white/5 hover:text-white no-underline'>Contact</Button>
+          <Button variant='ghost' className='text-white text-[15px] hover:bg-white/5 hover:text-white no-underline'>Contact</Button>
         </Link>
         <Link href="/geolocator-ai">
-        <Button variant='ghost' className='text-white text-[15px] hover:bg-white/5 hover:text-white no-underline'>Geolocator AI</Button>
+          <Button variant='ghost' className='text-white text-[15px] hover:bg-white/5 hover:text-white no-underline'>Geolocator AI</Button>
         </Link>
 
 
@@ -75,6 +75,12 @@ const Navbar = () => {
                     <Link className='text-lg' href="/about"> About Us</Link>
                     <Link className='text-lg' href="/contact"> Contact</Link>
                     <Link className='text-lg' href="/geolocator-ai"> Geolocator AI</Link>
+                    <Link href="http://app.zenlect.com" target='_blank' className="relative mt-5">
+                      <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                      <div className="px-5 py-2 rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent text-sm font-medium">
+                        Login
+                      </div>
+                    </Link>
                   </div>
                   {/* <div className='flex flex-col gap-3'>
                     <button className="relative w-[6rem] px-1 py-2">
