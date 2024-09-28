@@ -70,9 +70,11 @@ const Navbar = () => {
               <div className='flex flex-col justify-between h-[80vh]'>
                 <div className='flex flex-col'>
 
-                  <div className='flex flex-col gap-1 items-start mb-5'>
+                  <div className='flex flex-col gap-2 items-start mb-5'>
+                    <Link className='text-lg' href="/">Home</Link>
                     <Link className='text-lg' href="/about"> About Us</Link>
                     <Link className='text-lg' href="/contact"> Contact</Link>
+                    <Link className='text-lg' href="/geolocator-ai"> Geolocator AI</Link>
                   </div>
                   {/* <div className='flex flex-col gap-3'>
                     <button className="relative w-[6rem] px-1 py-2">
