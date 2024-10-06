@@ -7,20 +7,15 @@ const Footer = () => {
     return (
         <div className='px-4 md:px-8 pt-20 pb-5 lg:py-5 h-full w-full bg-zinc-900 border-t-2 border-zinc-800 flex flex-col gap-20 lg:gap-5 font-poppins'>
             <div className='flex items-center justify-center'>
-                <div className='grid grid-cols-2 text-left md:grid-cols-3 gap-5 md:px-20 md:py-20 w-full'>
-                    <div className='flex flex-col gap-3'>
-                        <h2 className='text-xl font-bold py-2'>Products</h2>
-                        <Link href={"/geolocator-ai"} className='text-sm hover:text-blue-500 lg:text-[15px] text-gray-300'>Geolocator AI</Link>
-                        <Link href={"/"} className='text-sm hover:text-blue-500 lg:text-[15px] text-gray-300'>Legal Advisor</Link>
-                    </div>
-                    <div className='flex flex-col gap-3'>
+                <div className='grid grid-cols-1 text-left md:grid-cols-2 gap-5 md:px-20 md:py-20 w-full justify-items-center md:justify-items-start'>
+                    
+                    <div className='flex flex-col gap-3 text-center md:text-left'>
                         <h2 className='text-xl font-bold py-2'>Company</h2>
                         <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/privacy-policy"}>Privacy Policy</Link>
                         <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/usage-policy"}>Terms of Use</Link>
-                        <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/ethics"}>Ethics & Compliance
-                        </Link>
+                        
                     </div>
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 text-center md:text-left'>
                         <h2 className='text-xl font-bold py-2'>Contact</h2>
                         <Link href={"/mailto:support@zenlect.com"} className='text-sm lg:text-[15px] hover:text-blue-500 text-gray-300'>support@zenlect.com</Link>
                        
