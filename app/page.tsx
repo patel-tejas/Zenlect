@@ -1,4 +1,5 @@
-import {  FeaturesSectionMain } from '@/components/FeatureSectionMain'
+import AiForEveryone from '@/components/AiForEveryone'
+import { FeaturesSectionMain } from '@/components/FeatureSectionMain'
 import { HeroSection } from '@/components/HeroSection'
 import React from 'react'
 
@@ -8,6 +9,7 @@ const page = () => {
       <div className=''>
         <HeroSection />
         <FeaturesSectionMain />
+        <AiForEveryone />
         {/* <StepsTimeline /> */}
         {/* <Vision /> */}
       </div>

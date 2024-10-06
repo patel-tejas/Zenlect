@@ -44,10 +44,10 @@ export function HeroSection() {
                     }}
                     className="text-center px-4 text-xl"
                 >
-                    Empowering industries with advanced AI for {" "}
+                    Empowering society with advanced AI for {" "}
                     <Highlight className="text-white">
 
-                        Geolocation, {" "} Legal matters and beyond.
+                    Administration,{" "} industries and beyond.
                     </Highlight>
                 </motion.p>
 
