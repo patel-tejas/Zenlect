@@ -13,6 +13,7 @@ const Footer = () => {
                         <h2 className='text-xl font-bold py-2'>Company</h2>
                         <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/privacy-policy"}>Privacy Policy</Link>
                         <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/usage-policy"}>Terms of Use</Link>
+                        <Link className='hover:text-blue-500 text-sm lg:text-[15px]' href={"/identity"}>Our Identity</Link>
                         
                     </div>
                     <div className='flex flex-col gap-3 text-center md:text-left'>

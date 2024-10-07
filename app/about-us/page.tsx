@@ -8,7 +8,7 @@ const page = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-10'>
 
                 {projects.map((project, index) => (
-                    <div key={index} className='rounded-2xl h-full w-full p-6 md:p-8 overflow-hidden bg-gray-950/40 border border-white/[0.2] hover:border-slate-700 relative z-20'>
+                    <div key={index} className='rounded-2xl h-full w-full p-6 md:p-8 overflow-hidden bg-gray-950/40 border border-white/[0.2] hover:border-slate-700 relative z-20 hover:bg-gray-900/60 duration-200'>
                         <h2 className='text-2xl font-bold py-3 text-center md:text-left'>{project.title}</h2>
                         <p className='text-gray-500 text-[15px] md:text-lg leading-relaxed text-center md:text-left'>{project.description}</p>
                     </div>
