@@ -35,6 +35,7 @@ const config: Config = {
 			fontFamily: {
 				sans: ['var(--font-noto-sans)'],
 				poppins: ['var(--font-poppins)'],
+				montserrat: ['var(--font-montserrat)'],
 			},
 			colors: {
 				background: 'hsl(var(--background))',

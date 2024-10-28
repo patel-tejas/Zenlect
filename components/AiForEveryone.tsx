@@ -3,10 +3,9 @@ import { CardSpotlight } from './ui/card-spotlight'
 import { FaUsers } from "react-icons/fa";
 import { GrUserSettings } from "react-icons/gr";
 import { HiOutlineBuildingLibrary } from "react-icons/hi2";
-import Link from 'next/link';
 const AiForEveryone = () => {
     return (
-        <div className='bg-gradient-to-b from-slate-950 to-black min-h-screen px-5 md:px-20 h-full pt-10 pb-20 xl:pb-[200px]'>
+        <div className='bg-gradient-to-b from-slate-950 to-black min-h-screen px-5 md:px-20 h-full pt-20 pb-20 xl:pb-[200px]'>
             <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white">
                 AI for Everyone
             </h4>
@@ -59,11 +58,11 @@ const AiForEveryone = () => {
                 </CardSpotlight>
             </div>
             <div className='flex items-center justify-center w-full mt-10 xl:mt-20 group'>
-                <Link href={"/contact"} className=''>
+                <a href={"/contact"} className=''>
                 <button className="bg-violet-500 px-5 py-2 border-violet-600 border-2 rounded-[6px] text-white text-[16px] xl:text-xl font-medium text-nowrap font-poppins group-hover:bg-black transition duration-200 group-hover:border-2 hover:border-indigo-500">
                     Contact Us
                 </button>
-                </Link>
+                </a>
 
             </div>
         </div>

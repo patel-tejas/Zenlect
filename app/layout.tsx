@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins, Noto_Sans } from 'next/font/google';
+import { Poppins, Noto_Sans, Montserrat } from 'next/font/google';
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
-
+import Cursor from "@/components/cursor/Cursor";
+import { Analytics } from '@vercel/analytics/react';
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
@@ -31,13 +38,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${notoSans.variable} antialiased`}
+        className={`${poppins.variable} ${notoSans.variable} ${montserrat.variable} antialiased`}
       >
+        <Cursor />
         <nav className="sticky top-0 z-50 backdrop-blur-lg bg-black/80 border-b border-white/20">
         <Navbar />
         </nav>
         {children}
         <Footer/>
+        <Analytics />
       </body>
     </html>
   );
