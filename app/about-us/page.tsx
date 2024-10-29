@@ -38,7 +38,7 @@ const page = () => {
             <div className='flex flex-col text-xl'>
 
                 {projects.map((project, index) => (
-                    <div key={index} className={`flex flex-col gap-5 text-xl items-center border-b-2 border-zinc-800 py-10 ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} ${index === projects.length - 1 ? 'border-b-0' : ''}`}>
+                    <div key={index} className={`flex flex-col gap-5 text-xl items-center border-zinc-800 py-10 ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} ${index === projects.length - 1 ? 'border-b-0' : 'border-b-2'}`}>
                         <h2 className={`w-full md:w-1/2 text-2xl md:text-[4vw] font-bold uppercase text-purple-400 hover:text-purple-600 duration-300 text-center ${index % 2 === 1 ? 'md:text-right' : ''}`}>{project.title}</h2>
                         <p className='max-w-md md:w-1/2 text-center md:text-left text-base md:text-xl'>{project.description}</p>
                     </div>
