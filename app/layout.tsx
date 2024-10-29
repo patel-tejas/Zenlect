@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins, Noto_Sans, Montserrat } from 'next/font/google';
+import { Poppins, Montserrat } from 'next/font/google';
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import Cursor from "@/components/cursor/Cursor";
