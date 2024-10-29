@@ -37,7 +37,7 @@ export default function RootLayout({
         <div className="hidden md:block">
           <Cursor />
         </div>
-        <nav className="sticky top-0 z-50 backdrop-blur-lg bg-black/80 border-b border-white/10">
+        <nav className="sticky top-0 z-50 backdrop-blur-lg bg-black/80 border-t-0 border-b border-white/10">
           <Navbar />
         </nav>
         {children}
