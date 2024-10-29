@@ -18,12 +18,6 @@ const montserrat = Montserrat({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
-const notoSans = Noto_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-noto-sans',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
-});
 
 export const metadata: Metadata = {
   title: "Zenlect",
@@ -38,12 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${notoSans.variable} ${montserrat.variable} antialiased`}
+        className={`${poppins.variable} ${montserrat.variable} antialiased`}
       >
         <div className="hidden md:block">
           <Cursor />
         </div>
-        <nav className="sticky top-0 z-50 backdrop-blur-lg bg-black/80 border-b border-white/20">
+        <nav className="sticky top-0 z-50 backdrop-blur-lg bg-black/80 border-b border-white/10">
           <Navbar />
         </nav>
         {children}
