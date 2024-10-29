@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Footer = () => {
     return (
-        <div className='px-4 md:px-8 pt-20 pb-5 lg:py-5 h-full w-full bg-zinc-900 border-t-2 border-zinc-800 flex flex-col gap-20 lg:gap-5 font-poppins'>
+        <div className='px-4 md:px-8 pt-20 pb-5 lg:py-5 h-full w-full bg-zinc-900 border-t-2 border-zinc-800 flex flex-col gap-20 lg:gap-5 font-montserrat'>
             <div className='flex items-center justify-center'>
                 <div className='grid grid-cols-1 text-left md:grid-cols-2 gap-5 md:px-20 md:py-20 w-full justify-items-center md:justify-items-start'>
                     
@@ -23,9 +23,9 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className=' flex flex-col lg:flex-row justify-between gap-2 font-poppins items-center'>
+            <div className=' flex flex-col lg:flex-row justify-between gap-2 font-montserrat items-center'>
 
-                <div className='font-poppins font-bold flex items-center justify-center gap-2'>
+                <div className='font-montserrat font-bold flex items-center justify-center gap-2'>
                 <Image src={logo} alt="logo" width={50} height={50} />
 
                     <a href={"/"} className='font-bold text-lg lg:text-2xl mt-1'>Zenlect<span className='tracking-normal text-purple-500'>.</span></a>

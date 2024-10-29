@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='h-full py-10 font-poppins'>
+    <div className='h-full py-10 font-montserrat'>
       <h1 className='text-2xl md:text-4xl font-bold text-center '>
         Privacy Policy
 

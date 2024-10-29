@@ -1,16 +1,46 @@
+"use client"
 import React from 'react'
+import gsap from 'gsap';
 
 const page = () => {
-    return (
-        <div className='min-h-screen gap-5 px-5 md:px-20 py-20 w-full font-poppins'>
+    const handleMouseEnter = (e: React.MouseEvent<HTMLSpanElement>) => {
+        gsap.to(e.target, {
+            y: -5,
+            color: "#c263d1",
+            ease: "elastic.out(1.4,0.3)"
+        });
+    };
 
-            <h1 className='text-2xl md:text-4xl font-bold text-center w-full'>About Us</h1>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-10'>
+    const handleMouseLeave = (e: React.MouseEvent<HTMLSpanElement>) => {
+        gsap.to(e.target, {
+            y: 0,
+            color: "#fff",
+            ease: "elastic.out"
+        });
+    };
+
+    return (
+        <div className='min-h-screen gap-5 px-5 md:px-20 py-10 w-full font-montserrat'>
+
+            <h1 className='font-semibold overflow-hidden text-[10vw] sm:text-[5vw] whitespace-nowrap text-center md:pb-10'>
+                <span className='inline-block'>&nbsp;</span>
+                <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>A</span>
+                <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>b</span>
+                <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>o</span>
+                <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>u</span>
+                <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>t</span>
+                <span className='inline-block'>&nbsp;</span>
+
+                <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>U</span>
+                <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>s</span>
+
+            </h1>
+            <div className='flex flex-col text-xl'>
 
                 {projects.map((project, index) => (
-                    <div key={index} className='rounded-2xl h-full w-full p-6 md:p-8 overflow-hidden bg-gray-950/40 border border-white/[0.2] hover:border-slate-700 relative z-20 hover:bg-gray-900/60 duration-200'>
-                        <h2 className='text-2xl font-bold py-3 text-center md:text-left'>{project.title}</h2>
-                        <p className='text-gray-500 text-[15px] md:text-lg leading-relaxed text-center md:text-left'>{project.description}</p>
+                    <div key={index} className={`flex flex-col gap-5 text-xl items-center border-b-2 border-zinc-800 py-10 ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} ${index === projects.length - 1 ? 'border-b-0' : ''}`}>
+                        <h2 className={`w-full md:w-1/2 text-2xl md:text-[4vw] font-bold uppercase text-purple-400 hover:text-purple-600 duration-300 text-center ${index % 2 === 1 ? 'md:text-right' : ''}`}>{project.title}</h2>
+                        <p className='max-w-md md:w-1/2 text-center md:text-left text-base md:text-xl'>{project.description}</p>
                     </div>
                 ))}
             </div>

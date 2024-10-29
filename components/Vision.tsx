@@ -11,8 +11,8 @@ const Vision = () => {
             </div>
             <div className='flex flex-col gap-5'>
 
-                <h1 className='text-2xl lg:text-4xl font-bold text-center text-white max-w-xl px-5 font-poppins w-full mx-auto'>AI-driven precision for smarter decisions. All in one innovative solution.</h1>
-                <p className='text-slate-500 text-center px-5 font-poppins text-sm md:text-lg max-w-3xl w-full mx-auto'>
+                <h1 className='text-2xl lg:text-4xl font-bold text-center text-white max-w-xl px-5 font-montserrat w-full mx-auto'>AI-driven precision for smarter decisions. All in one innovative solution.</h1>
+                <p className='text-slate-500 text-center px-5 font-montserrat text-sm md:text-lg max-w-3xl w-full mx-auto'>
                     ZENLECT AI&apos;s long-term vision is to harness AI to streamline processes, improve decision-making, and enhance operational efficiencies in sectors that require high levels of accuracy, like legal enforcement and location-based intelligence
                 </p>
             </div>

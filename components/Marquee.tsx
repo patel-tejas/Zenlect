@@ -20,8 +20,8 @@ const MarqueeComponent = () => {
         });
     };
     return (
-        <Marquee className='marquee font-montserrat font-semibold uppercase bg-slate-950 border-t-[#5a166b] border-t-4 border-b-[#5a166b] border-b-4' speed={200} pauseOnHover>
-            <h1 className='text-[3vw]'>
+        <Marquee className='marquee font-montserrat font-semibold uppercase bg-slate-950 border-t-[#5a166b] border-t-4 border-b-[#5a166b] border-b-4 py-2 md:py-5' speed={100} pauseOnHover>
+            <h1 className='text-xl sm:text-[3vw]'>
                 <span onMouseEnter={handleMarqueeHover} onMouseLeave={handleMarqueeLeave}>&nbsp;Zenlect AI </span>
                 <span>✦ </span>
                 <span onMouseEnter={handleMarqueeHover} onMouseLeave={handleMarqueeLeave}>Custom AI Solutions </span>

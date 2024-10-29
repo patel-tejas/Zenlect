@@ -33,18 +33,17 @@ const OurSolutions = () => {
     });
   };
 
-  
+
   return (
     <>
       <div className='min-h-screen gap-5 px-5 md:px-20 py-10 md:py-20 w-full font-montserrat'>
 
-        <h1 className='text-[15px] md:text-4xl font-bold inline-block md:block md:w-max  px-3 py-2 rounded-full text-center md:text-left title'>Custom AI solutions for <span className='bg-gradient-to-tr from-pink-600 via-purple-600 to-purple-800'>every sector</span></h1>
+        <h1 className='text-[7vw] sm:text-[4vw] md:text-4xl font-bold px-3 py-2 rounded-full text-center title'>Custom AI solutions for <span className='bg-gradient-to-tr from-pink-600 via-purple-600 to-purple-800'>every sector</span></h1>
 
-        <div className="">
-          <h1 className='font-semibold overflow-hidden text-[5vw] font-menseal whitespace-nowrap uppercase'>
+        <div className="mt-4 sm:mt-0">
+          <h1 className='font-semibold overflow-hidden text-[5vw] sm:text-[3vw] whitespace-nowrap uppercase text-center'>
             <span className='inline-block'>-</span>
             <span className='inline-block'>&nbsp;</span>
-
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>G</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>O</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>V</span>
@@ -64,9 +63,12 @@ const OurSolutions = () => {
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>I</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>E</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>S</span>
+            <span className='inline-block'>&nbsp;</span>
+            <span className='inline-block'>-</span>
+
           </h1>
 
-          <h1 className='font-semibold overflow-hidden text-[5vw] font-menseal whitespace-nowrap uppercase'>
+          <h1 className='font-semibold overflow-hidden text-[5vw] sm:text-[3vw] font-menseal whitespace-nowrap uppercase text-center'>
             <span className='inline-block'>-</span>
 
             <span className='inline-block'>&nbsp;</span>
@@ -89,9 +91,12 @@ const OurSolutions = () => {
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>S</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>E</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>S</span>
+            <span className='inline-block'>&nbsp;</span>
+            <span className='inline-block'>-</span>
+
           </h1>
 
-          <h1 className='font-semibold overflow-hidden text-[5vw] font-menseal whitespace-nowrap uppercase'>
+          <h1 className='font-semibold overflow-hidden text-[5vw] lg:text-[3vw] font-menseal whitespace-nowrap uppercase text-center'>
             <span className='inline-block'>-</span>
 
             <span className='inline-block'>&nbsp;</span>
@@ -109,6 +114,9 @@ const OurSolutions = () => {
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>T</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>O</span>
             <span className='inline-block' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>R</span>
+            <span className='inline-block'>&nbsp;</span>
+            <span className='inline-block'>-</span>
+
           </h1>
         </div>
         {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-5 py-10'>
@@ -130,7 +138,7 @@ const OurSolutions = () => {
             className=""
           >
             <div className="max-w-xs">
-              <h2 className="text-left text-balance text-[18px] md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              <h2 className="text-center sm:text-left text-balance text-[22px] md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                 GOVT. AGENCIES
               </h2>
               <p className="mt-4 text-left  text-base/6 text-neutral-200">
@@ -147,7 +155,7 @@ const OurSolutions = () => {
           </WobbleCard>
           <WobbleCard containerClassName="col-span-1 bg-black lg:col-span-2 min-h-[300px]">
             <div className="max-w-xs">
-              <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white uppercase">
+              <h2 className="text-center sm:text-left text-balance text-[22px] md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white uppercase">
                 Public Organizations
               </h2>
               <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
@@ -163,7 +171,7 @@ const OurSolutions = () => {
           </WobbleCard>
           <WobbleCard containerClassName="col-span-1 lg:col-span-4 bg-black min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
             <div className="max-w-sm">
-              <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white uppercase">
+              <h2 className="text-center sm:text-left text-balance text-[22px] md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white uppercase">
                 Private Enterprises
               </h2>
               <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
@@ -180,7 +188,7 @@ const OurSolutions = () => {
         </div>
       </div>
 
-     
+
     </>
   )
 }

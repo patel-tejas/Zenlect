@@ -10,7 +10,7 @@ import logo from "@/public/zenlectnobg1.png"
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between h-[9vh] px-4 md:px-8 font-poppins items-center max-w-[1440px] mx-auto'>
+    <div className='flex justify-between h-[9vh] px-4 md:px-8 font-montserrat items-center max-w-[1440px] mx-auto'>
       <div className='flex gap-2 items-center'>
         <Image src={logo} alt="logo" width={50} height={50} />
         <a href={"/"} className='font-bold text-xl mt-1 cursor-none'>Zenlect<span className='text-purple-400'>.</span></a>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <div className='h-[1px] rounded-full w-6 bg-slate-400'></div>
           </SheetTrigger>
           <SheetContent className='bg-black  border-l-[0.5px] border-slate-800 shadow-2xl px-10'>
-            <SheetHeader className='my-10 w-full font-poppins h-full'>
+            <SheetHeader className='my-10 w-full font-montserrat h-full'>
               <div className='flex flex-col justify-between h-[80vh]'>
                 <div className='flex flex-col'>
 

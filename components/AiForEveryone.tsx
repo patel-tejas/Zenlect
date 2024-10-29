@@ -59,7 +59,7 @@ const AiForEveryone = () => {
             </div>
             <div className='flex items-center justify-center w-full mt-10 xl:mt-20 group'>
                 <a href={"/contact"} className=''>
-                <button className="bg-violet-500 px-5 py-2 border-violet-600 border-2 rounded-[6px] text-white text-[16px] xl:text-xl font-medium text-nowrap font-poppins group-hover:bg-black transition duration-200 group-hover:border-2 hover:border-indigo-500">
+                <button className="bg-violet-500 px-5 py-2 border-violet-600 border-2 rounded-[6px] text-white text-[16px] xl:text-xl font-medium text-nowrap font-montserrat group-hover:bg-black transition duration-200 group-hover:border-2 hover:border-indigo-500">
                     Contact Us
                 </button>
                 </a>

@@ -9,7 +9,7 @@ import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collisi
 export function HeroSection() {
     return (
         <BackgroundBeamsWithCollision className="h-full w-full">
-            <HeroHighlight className="font-poppins h-full flex items-center flex-col">
+            <HeroHighlight className="font-montserrat h-full flex items-center flex-col">
                 <motion.h1
                     initial={{
                         opacity: 0,
@@ -23,7 +23,7 @@ export function HeroSection() {
                         duration: 0.5,
                         ease: [0.4, 0.0, 0.2, 1],
                     }}
-                    className="px-4 text-5xl lg:text-9xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto uppercase font-poppins tracking-widest "
+                    className="px-4 text-5xl lg:text-9xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto uppercase font-montserrat tracking-widest "
                 >
                     Zenlec<span className="tracking-normal">t.</span>
 
